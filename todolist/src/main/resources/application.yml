@@ -20,3 +20,10 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
+# JWT settings
+security:
+  jwt:
+    secret: change-this-to-a-strong-random-secret-which-you-should-store-securely
+    access-token-ms: 900000   # 15 minutes
+    refresh-token-ms: 1209600000 # 14 days (in ms)
