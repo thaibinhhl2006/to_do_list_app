@@ -20,9 +20,8 @@ spring:
         format_sql: true
         dialect: org.hibernate.dialect.MySQLDialect
 
-# JWT settings
 security:
   jwt:
-    secret: change-this-to-a-strong-random-secret-which-you-should-store-securely
-    access-token-ms: 900000   # 15 minutes
-    refresh-token-ms: 1209600000 # 14 days (in ms)
+    secret: ${JWT_SECRET}
+    access-token-ms: 900000
+    refresh-token-ms: 1209600000
