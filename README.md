@@ -27,29 +27,29 @@ This is an open-source project, great for anyone who wants to learn how to build
 
 ```
 to_do_list_app/
-├── .idea/                              # IDE configuration (IntelliJ)
-└── todolist/                           # Main application source code (Spring Boot)
-    ├── .mvn/wrapper/                   # Maven wrapper
-    ├── src/
-    │   ├── main/
-    │   │   ├── java/com/special/todolist/
-    │   │   │   ├── config/             # Application configuration (database, beans, CORS...)
-    │   │   │   ├── controller/         # REST Controllers (Auth, Task...)
-    │   │   │   ├── domain/             # Core business objects
-    │   │   │   ├── dto/                # Data Transfer Objects (request/response)
-    │   │   │   ├── entity/             # Entities mapped to MySQL tables (Task, User...)
-    │   │   │   ├── exception/          # Centralized exception handling (Global Exception Handler)
-    │   │   │   ├── repository/         # Spring Data JPA Repositories
-    │   │   │   ├── security/           # Spring Security & JWT configuration
-    │   │   │   ├── service/            # Business logic
-    │   │   │   └── TodolistApplication.java   # Application entry point
-    │   │   └── resources/              # application.properties/yml, static resources
-    │   └── test/java/com/special/todolist/
-    │       └── TodolistApplicationTests.java
-    ├── .env.example                     # Sample environment variables file (copy as .env)
-    ├── .gitignore
-    ├── mvnw / mvnw.cmd                  # Maven wrapper scripts
-    └── pom.xml                          # Maven configuration & dependencies
+├── .mvn/wrapper/                       # Maven wrapper
+├── src/
+│   ├── main/
+│   │   ├── java/com/special/todolist/
+│   │   │   ├── config/                 # Application configuration (database, beans, CORS...)
+│   │   │   ├── controller/             # REST Controllers (Auth, Task...)
+│   │   │   ├── domain/                 # Core business objects
+│   │   │   ├── dto/                    # Data Transfer Objects (request/response)
+│   │   │   ├── entity/                 # Entities mapped to MySQL tables (Task, User...)
+│   │   │   ├── exception/              # Centralized exception handling (Global Exception Handler)
+│   │   │   ├── repository/             # Spring Data JPA Repositories
+│   │   │   ├── security/               # Spring Security & JWT configuration
+│   │   │   ├── service/                # Business logic
+│   │   │   └── TodolistApplication.java   # Application entry point
+│   │   └── resources/                  # application.properties/yml, static resources
+│   └── test/java/com/special/todolist/
+│       └── TodolistApplicationTests.java
+├── .env.example                         # Sample environment variables file (copy as .env)
+├── .gitattributes
+├── .gitignore
+├── mvnw / mvnw.cmd                      # Maven wrapper scripts
+├── pom.xml                              # Maven configuration & dependencies
+└── README.md
 ```
 
 ## ⚙️ Prerequisites
@@ -71,7 +71,7 @@ Before you begin, make sure you have the following installed:
 
 ```bash
 git clone https://github.com/thaibinhhl2006/to_do_list_app.git
-cd to_do_list_app/todolist
+cd to_do_list_app
 ```
 
 **2. Create the MySQL database**
@@ -242,6 +242,7 @@ Contributions are always welcome! If you'd like to help improve this project, pl
 5. Open a **Pull Request** for review and merging
 
 Found a bug or have an idea? Feel free to open an [Issue](https://github.com/thaibinhhl2006/to_do_list_app/issues).
+
 <p align="center">
   Made with ❤️ by <a href="https://github.com/thaibinhhl2006">thaibinhhl2006</a>
 </p>
